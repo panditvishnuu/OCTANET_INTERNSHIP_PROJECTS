@@ -1,0 +1,209 @@
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+
+#img2{
+    height: 572px;
+    width: 450px;
+    position: relative;
+    top: 90px;
+    position: relative;
+    z-index: 99;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 9px 7px 24px  rgb(164, 156, 156) ;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#img2:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+#burr1{
+    height: 120px;
+    width: 280px;
+    position: absolute;
+    top: -2px;
+    left: -50px;
+    mix-blend-mode: multiply;
+    border: none;
+    border-style: none;
+}
+
+.text-div{
+    position: absolute;
+    font-size: 30px;
+    font-family: fantasy;
+    top: 35px;
+    width: 50%;
+    z-index: 999;
+    text-align: center;
+
+}
+
+
+#scroll-div1{
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    top: 60px;
+}
+
+
+#scroll-div1::-webkit-scrollbar{
+    display: none;
+}
+
+
+#scroll-div1 h1{
+    display: inline-block;
+    font-size: 150px;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 3px;
+    animation: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#scroll-div2{
+    position: absolute;
+    top: 36%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: 100;
+}
+
+
+#scroll-div2::-webkit-scrollbar{
+    display: none;
+}
+
+
+#scroll-div2 h1{
+    display: inline-block;
+    font-size: 150px;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 3px;
+    color: transparent;
+    animation: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    
+}
+
+#scroll-div3{
+    position: absolute;
+    top: 64%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+#scroll-div3::-webkit-scrollbar{
+    display: none;
+}
+
+
+#scroll-div3 h1{
+    display: inline-block;
+    font-size: 150px;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 3px;
+    animation: scroll1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(calc(-100% - 32px));
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes scroll1 {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(calc(-100% - 32px));
+    }
+}
+
+.main2{
+    height: 170px;
+    width: 100%;
+    background-color: skyblue;
+}
+
+#btn1{
+    height: 40px;
+    width: 110px;
+    border-radius: 20px;
+    position: absolute;
+    top: 30px;
+    right: 95px;
+    font-size: 18px;
+    font-family:fantasy;
+    letter-spacing: 1px;
+    background-color: black;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+#btn1:hover{
+    background-color: skyblue;
+}
+
+
+a{
+    position: absolute;
+    top: 38px;
+    right: 20px;
+    font-family: fantasy;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    cursor: pointer;
+    color: blueviolet;
+}
